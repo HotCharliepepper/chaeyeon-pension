@@ -1,0 +1,1075 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- ============================================================ -->
+  <!-- SEO / META — 채연펜션                                         -->
+  <!-- TODO: 확정 도메인 입력 후 canonical / og:url 수정             -->
+  <!-- ============================================================ -->
+  <title>채연펜션 | 파주 헤이리마을 근처 정겨운 별장형 펜션 · 가족 모임 · 단체 숙박 · 촬영 문의</title>
+  <meta name="description" content="파주 헤이리마을 근처에 자리한 채연펜션. 시간이 묻어 있는 정겨운 별장형 공간으로, 가족 모임과 단체 숙박, 촬영·워크숍 문의를 함께 확인할 수 있습니다." />
+  <meta name="keywords" content="파주 헤이리마을 근처 펜션, 헤이리마을 숙소, 파주 가족 모임 숙소, 파주 단체 펜션, 파주 별장형 펜션, 파주 드라마 촬영지 펜션, 파주 촬영 가능한 펜션, 파주 워크숍 숙소, 파주 조용한 펜션" />
+  <link rel="canonical" href="https://example.com/" />
+  <!-- TODO: 확정 도메인 입력 후 canonical href 수정 -->
+
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="채연펜션 | 파주 헤이리마을 근처 정겨운 별장형 펜션" />
+  <meta property="og:description" content="가족 모임, 단체 숙박, 촬영·워크숍 문의를 함께 확인할 수 있는 별장형 공간입니다." />
+  <meta property="og:url" content="https://example.com/" />
+  <meta property="og:image" content="./assets/og-chaeyeon.jpg" />
+  <meta property="og:locale" content="ko_KR" />
+  <!-- TODO: OG 이미지 ./assets/og-chaeyeon.jpg 파일로 교체 -->
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="채연펜션 | 파주 헤이리마을 근처 별장형 펜션" />
+  <meta name="twitter:description" content="가족 모임·단체 숙박·촬영 문의가 가능한 파주 헤이리 근처 정겨운 펜션." />
+  <meta name="twitter:image" content="./assets/og-chaeyeon.jpg" />
+
+  <meta http-equiv="last-modified" content="2026-05-15" />
+  <!-- TODO: 발행 시점 업데이트 -->
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,300,0,0&display=swap" rel="stylesheet" />
+
+  <!-- Tailwind -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            cream:     "#F5EFE3",
+            beige:     "#E8DCC4",
+            sand:      "#D9CDB8",
+            wood:      "#8B6F47",
+            woodsoft:  "#A88A63",
+            brown:     "#3E2F23",
+            brownsoft: "#5A4632",
+            moss:      "#6B7A5A",
+            mossdeep:  "#4F5C42",
+            brick:     "#B8624A",
+            brickdeep: "#8E4632",
+            ink:       "#2A2118"
+          },
+          fontFamily: {
+            serif: ["'Noto Serif KR'", "serif"],
+            sans:  ["'Pretendard Variable'", "Pretendard", "sans-serif"]
+          }
+        }
+      }
+    };
+  </script>
+
+  <style>
+    :root{
+      --line-soft: rgba(139, 111, 71, 0.2);
+    }
+    html, body { background: #F5EFE3; }
+    body{
+      font-family: 'Pretendard Variable', Pretendard, sans-serif;
+      color: #3E2F23;
+      font-weight: 500;
+      letter-spacing: -0.012em;
+      -webkit-font-smoothing: antialiased;
+    }
+    .font-serif{
+      font-family: 'Noto Serif KR', serif;
+      letter-spacing: -0.025em;
+    }
+    .label-eyebrow{
+      font-family: 'Pretendard Variable', Pretendard, sans-serif;
+      font-weight: 600;
+      letter-spacing: 0.36em;
+      text-transform: uppercase;
+      font-size: 0.68rem;
+      color: #8B6F47;
+    }
+    .editorial-shadow{
+      box-shadow: 0 14px 38px rgba(62, 47, 35, 0.07), 0 2px 6px rgba(62, 47, 35, 0.04);
+    }
+    .hairline{ border-color: var(--line-soft); }
+    .material-symbols-outlined{ font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24; }
+
+    body::before{
+      content:'';
+      position: fixed; inset: 0;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='300' height='300' filter='url(%23n)' opacity='1'/%3E%3C/svg%3E");
+      opacity: 0.035;
+      pointer-events: none;
+      z-index: 9999;
+      mix-blend-mode: multiply;
+    }
+
+    .btn-primary{
+      background: linear-gradient(135deg, #B8624A 0%, #8E4632 100%);
+      color: #FBF7EE;
+      transition: transform .18s ease, filter .18s ease, box-shadow .18s ease;
+    }
+    .btn-primary:hover{ filter: brightness(1.04); transform: translateY(-2px); box-shadow: 0 12px 26px rgba(142,70,50,0.22); }
+    .btn-ghost{
+      background: transparent; color: #3E2F23;
+      border: 1px solid rgba(62, 47, 35, 0.28);
+      transition: background .18s ease, transform .18s ease;
+    }
+    .btn-ghost:hover{ background: rgba(62,47,35,0.05); transform: translateY(-2px); }
+    .btn-wood{
+      background: #8B6F47; color: #FBF7EE;
+      transition: transform .18s ease, filter .18s ease;
+    }
+    .btn-wood:hover{ filter: brightness(1.05); transform: translateY(-2px); }
+
+    .reveal{
+      opacity: 0; transform: translate3d(0,18px,0);
+      transition: opacity .65s cubic-bezier(.22,.61,.36,1), transform .65s cubic-bezier(.22,.61,.36,1);
+    }
+    .reveal.is-in{ opacity: 1; transform: translate3d(0,0,0); }
+    .card-hover{ transition: transform .22s ease, box-shadow .22s ease; }
+    @media (hover:hover) and (pointer:fine){
+      .card-hover:hover{ transform: translate3d(0,-4px,0); box-shadow: 0 18px 36px rgba(62,47,35,0.09); }
+    }
+    @media (prefers-reduced-motion: reduce){
+      .reveal,.card-hover,.btn-primary,.btn-ghost,.btn-wood{ transition: none !important; transform: none !important; }
+      .reveal{ opacity:1 !important; }
+    }
+
+    .hero-overlay{
+      background:
+        linear-gradient(180deg, rgba(42,33,24,0.20) 0%, rgba(42,33,24,0.58) 100%),
+        radial-gradient(60% 60% at 50% 50%, rgba(245,239,227,0) 0%, rgba(42,33,24,0.18) 100%);
+    }
+
+    details > summary{ list-style: none; cursor: pointer; }
+    details > summary::-webkit-details-marker{ display: none; }
+    details[open] .faq-icon{ transform: rotate(45deg); }
+    .rule-soft{ height:1px; background: var(--line-soft); }
+  </style>
+
+  <!-- ============================================================ -->
+  <!-- 구조화 데이터 — LodgingBusiness                                -->
+  <!-- TODO: 좌표 / 도메인 / 전화 / 주소 / priceRange 입력            -->
+  <!-- ============================================================ -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LodgingBusiness",
+    "name": "채연펜션",
+    "description": "파주 헤이리마을 근처에 자리한 정겨운 별장형 펜션. 가족 모임, 단체 숙박, 촬영·워크숍 문의를 함께 확인할 수 있는 공간입니다.",
+    "url": "https://example.com/",
+    "image": "https://example.com/assets/chaeyeon-cover.jpg",
+    "telephone": "+82-00-0000-0000",
+    "address": {
+      "@type": "PostalAddress",
+      "addressCountry": "KR",
+      "addressRegion": "경기도",
+      "addressLocality": "파주시",
+      "streetAddress": "TODO: 상세주소 입력"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": "TODO",
+      "longitude": "TODO"
+    },
+    "amenityFeature": [
+      { "@type": "LocationFeatureSpecification", "name": "주차장", "value": true },
+      { "@type": "LocationFeatureSpecification", "name": "바비큐 가능", "value": true },
+      { "@type": "LocationFeatureSpecification", "name": "마당", "value": true },
+      { "@type": "LocationFeatureSpecification", "name": "단체/모임 공간", "value": true }
+    ],
+    "priceRange": "TODO"
+  }
+  </script>
+
+  <!-- ============================================================ -->
+  <!-- 구조화 데이터 — FAQPage                                        -->
+  <!-- TODO: 운영 정책 확정 후 답변 본문 다듬기                       -->
+  <!-- ============================================================ -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "채연펜션은 헤이리마을과 얼마나 가까운가요?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "채연펜션은 파주 헤이리마을 근처에 위치한 별장형 펜션입니다. 헤이리마을, 프로방스 마을 등 파주 여행 동선에서 머물기 좋은 위치이며, 정확한 이동 시간은 교통 상황에 따라 달라질 수 있어 지도에서 함께 확인해 주세요."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "가족 모임이나 단체 숙박이 가능한가요?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "채연펜션은 가족 모임과 단체 숙박을 함께 고려할 수 있는 별장형 공간입니다. 인원과 날짜, 바비큐 이용 여부에 따라 안내가 달라질 수 있어 예약 전 전화 문의를 권장합니다."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "촬영 장소로 이용한 적이 있나요?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "채연펜션은 여러 촬영에 활용된 경험이 있는 공간입니다. 촬영 문의는 일정, 인원, 장비 규모, 이용 시간, 촬영 목적에 따라 조건이 달라질 수 있어 사전 확인이 필요합니다."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "워크숍이나 단체 모임 공간으로 빌릴 수 있나요?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "워크숍과 단체 모임은 날짜, 인원, 필요한 공간, 숙박 여부에 따라 가능 여부가 달라질 수 있습니다. 기본 일정을 알려주시면 먼저 확인해 드립니다."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "주차와 바비큐 이용은 어떻게 되나요?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "주차와 바비큐 이용 조건은 일정과 인원, 차량 수에 따라 안내가 달라질 수 있습니다. 정확한 가능 여부는 예약 전 전화 문의를 권장합니다."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "예약은 어디서 하나요?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "채연펜션은 전화 문의와 예약 플랫폼 양쪽으로 예약하실 수 있습니다. 가족 모임, 단체 숙박, 촬영·워크숍 일정은 조건이 달라질 수 있어 먼저 가능 여부를 확인하는 것을 권장합니다."
+        }
+      }
+    ]
+  }
+  </script>
+</head>
+
+<body class="bg-cream text-brown selection:bg-wood/30 selection:text-brown">
+
+<!-- ============================================================== -->
+<!-- 고정 네비게이션                                                  -->
+<!-- ============================================================== -->
+<nav class="fixed top-0 inset-x-0 z-50 bg-cream/85 backdrop-blur-md border-b hairline">
+  <div class="max-w-7xl mx-auto flex items-center justify-between px-5 md:px-10 py-4">
+    <a href="#hero" class="font-serif text-lg md:text-xl font-bold tracking-[0.18em] text-brown">
+      채연펜션 <span class="hidden md:inline text-wood text-xs tracking-[0.32em] ml-2">CHAEYEON</span>
+    </a>
+    <div class="hidden md:flex items-center gap-9 text-sm text-brownsoft">
+      <a href="#opening" class="hover:text-brown transition">공간 이야기</a>
+      <a href="#spaces" class="hover:text-brown transition">공간 안내</a>
+      <a href="#shoot" class="hover:text-brown transition">촬영·모임</a>
+      <a href="#location" class="hover:text-brown transition">위치</a>
+      <a href="#faq" class="hover:text-brown transition">자주 묻는 질문</a>
+    </div>
+    <a href="#reservation"
+       class="btn-primary px-5 md:px-6 py-2.5 rounded-full text-xs md:text-sm font-semibold tracking-wider">
+      가능 여부 확인
+    </a>
+  </div>
+</nav>
+
+<main class="pt-0">
+
+  <!-- ============================================================ -->
+  <!-- 01. HERO                                                     -->
+  <!-- ============================================================ -->
+  <section id="hero" class="relative h-[100svh] min-h-[640px] w-full overflow-hidden">
+    <div class="absolute inset-0">
+      <!-- TODO: ./assets/hero-chaeyeon-exterior.jpg 실제 외관/마당 사진 교체 -->
+      <img src="./assets/hero-chaeyeon-exterior.jpg"
+           alt="파주 헤이리마을 근처 채연펜션 외관과 마당 — 시간이 묻어 있는 정겨운 별장형 펜션"
+           class="w-full h-full object-cover" />
+      <div class="absolute inset-0 hero-overlay"></div>
+    </div>
+
+    <div class="relative h-full flex flex-col items-center justify-center text-center px-6">
+      <span class="label-eyebrow text-cream/85 mb-6">파주 · 헤이리마을 근처 · 별장형 펜션</span>
+
+      <h1 class="font-serif text-cream text-4xl md:text-6xl lg:text-7xl font-bold leading-[1.08] mb-6 max-w-4xl">
+        파주 헤이리마을 근처,<br/>
+        시간이 묻어 있는 별장형 펜션
+      </h1>
+
+      <p class="text-cream/90 text-base md:text-xl font-medium mb-10 max-w-2xl leading-relaxed">
+        가족 모임, 단체 숙박, 촬영·워크숍 문의를<br class="md:hidden"/>
+        함께 확인할 수 있는 정겨운 공간입니다.
+      </p>
+
+      <div class="flex flex-wrap justify-center gap-2 mb-10">
+        <span class="px-4 py-2 rounded-full bg-cream/[0.12] backdrop-blur-sm text-cream/95 text-xs md:text-sm border border-cream/20">헤이리마을 근처</span>
+        <span class="px-4 py-2 rounded-full bg-cream/[0.12] backdrop-blur-sm text-cream/95 text-xs md:text-sm border border-cream/20">가족·단체 가능</span>
+        <span class="px-4 py-2 rounded-full bg-cream/[0.12] backdrop-blur-sm text-cream/95 text-xs md:text-sm border border-cream/20">촬영 경험 있음</span>
+        <span class="px-4 py-2 rounded-full bg-cream/[0.12] backdrop-blur-sm text-cream/95 text-xs md:text-sm border border-cream/20">바비큐 · 마당</span>
+      </div>
+
+      <div class="flex flex-col sm:flex-row gap-3 w-full sm:w-auto">
+        <a href="#reservation" class="btn-primary px-8 py-4 rounded-full font-semibold text-sm tracking-widest inline-flex items-center justify-center">
+          이용 가능 여부 확인하기
+        </a>
+        <a href="#shoot" class="btn-ghost bg-cream/10 backdrop-blur-sm text-cream border-cream/25 hover:bg-cream/20 px-8 py-4 rounded-full font-semibold text-sm tracking-widest inline-flex items-center justify-center">
+          촬영·단체 문의
+        </a>
+        <a href="#location" class="btn-ghost bg-cream/10 backdrop-blur-sm text-cream border-cream/25 hover:bg-cream/20 px-8 py-4 rounded-full font-semibold text-sm tracking-widest inline-flex items-center justify-center">
+          지도에서 보기
+        </a>
+      </div>
+    </div>
+
+    <div class="absolute bottom-8 left-1/2 -translate-x-1/2">
+      <a href="#opening" aria-label="아래로 스크롤">
+        <span class="material-symbols-outlined text-cream/80 text-3xl animate-bounce">keyboard_double_arrow_down</span>
+      </a>
+    </div>
+  </section>
+
+  <!-- ============================================================ -->
+  <!-- 02. OPENING STORY                                            -->
+  <!-- ============================================================ -->
+  <section id="opening" class="py-24 md:py-32 px-6 md:px-12">
+    <div class="max-w-5xl mx-auto reveal">
+      <span class="label-eyebrow block mb-6">Opening Story</span>
+      <h2 class="font-serif text-3xl md:text-5xl font-bold text-brown leading-tight mb-8">
+        여러 촬영에 활용된 경험이 있는,<br/>
+        정겨운 별장형 공간입니다.
+      </h2>
+      <div class="rule-soft my-8 max-w-[180px]"></div>
+      <p class="text-brownsoft text-base md:text-lg leading-[1.9] max-w-3xl">
+        채연펜션은 화려하게 새로 꾸민 신축 감성숙소가 아닙니다.<br class="hidden md:block"/>
+        헤이리마을과 가까운 파주의 한적한 동네에서, 가족과 모임이 머물고 여러 촬영에 활용된 경험이 쌓인 별장형 공간입니다.
+      </p>
+      <p class="text-brownsoft text-base md:text-lg leading-[1.9] max-w-3xl mt-6">
+        시간이 묻어 있는 공간이 필요한 날이 있습니다.<br class="hidden md:block"/>
+        채연펜션은 사진보다 직접 와서 공기와 마당과 거실의 느낌을 확인해 보시기를 권합니다.
+      </p>
+
+      <!-- TODO: 대표님 확인 후 공개 가능한 드라마/촬영 작품명 노출 방식 결정 -->
+      <!--
+      <div class="mt-10 inline-flex items-center gap-3 px-5 py-3 rounded-full bg-beige border border-wood/20">
+        <span class="material-symbols-outlined text-wood">videocam</span>
+        <span class="text-sm font-semibold text-brown">촬영 활용 작품: TODO</span>
+      </div>
+      -->
+    </div>
+  </section>
+
+  <!-- ============================================================ -->
+  <!-- 03. QUICK INFO                                               -->
+  <!-- ============================================================ -->
+  <section id="quick-info" class="py-20 md:py-24 px-6 md:px-12 bg-beige/60">
+    <div class="max-w-7xl mx-auto">
+      <div class="flex flex-col md:flex-row md:items-end md:justify-between gap-6 mb-12 reveal">
+        <div>
+          <span class="label-eyebrow block mb-4">Quick Info</span>
+          <h2 class="font-serif text-2xl md:text-4xl font-bold text-brown">
+            예약 전 빠르게 확인하세요
+          </h2>
+        </div>
+        <p class="text-brownsoft text-sm md:text-base max-w-md">
+          이용 목적에 따라 안내 조건이 달라질 수 있어, 먼저 가능 여부를 확인하는 것을 권장합니다.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-3 md:gap-5">
+
+        <article class="card-hover bg-cream rounded-xl p-5 md:p-6 editorial-shadow reveal">
+          <span class="material-symbols-outlined text-wood mb-3">location_on</span>
+          <p class="text-[11px] tracking-[0.18em] font-semibold text-wood uppercase mb-2">위치</p>
+          <!-- TODO: 정확한 도로명 주소 입력 -->
+          <p class="text-sm md:text-base font-semibold text-brown leading-snug">경기 파주시<br/>(헤이리마을 근처)</p>
+        </article>
+
+        <article class="card-hover bg-cream rounded-xl p-5 md:p-6 editorial-shadow reveal">
+          <span class="material-symbols-outlined text-wood mb-3">call</span>
+          <p class="text-[11px] tracking-[0.18em] font-semibold text-wood uppercase mb-2">전화</p>
+          <!-- TODO: 확정 전화번호로 교체 (tel 링크 동일하게 수정) -->
+          <a href="tel:00000000000" class="text-sm md:text-base font-semibold text-brown leading-snug hover:text-brick transition">
+            000-0000-0000
+          </a>
+        </article>
+
+        <article class="card-hover bg-cream rounded-xl p-5 md:p-6 editorial-shadow reveal">
+          <span class="material-symbols-outlined text-wood mb-3">event_available</span>
+          <p class="text-[11px] tracking-[0.18em] font-semibold text-wood uppercase mb-2">예약</p>
+          <p class="text-sm md:text-base font-semibold text-brown leading-snug">예약 플랫폼<br/>· 전화 문의</p>
+        </article>
+
+        <article class="card-hover bg-cream rounded-xl p-5 md:p-6 editorial-shadow reveal">
+          <span class="material-symbols-outlined text-wood mb-3">local_parking</span>
+          <p class="text-[11px] tracking-[0.18em] font-semibold text-wood uppercase mb-2">주차</p>
+          <!-- TODO: 주차 대수 / 단체 차량 안내 입력 -->
+          <p class="text-sm md:text-base font-semibold text-brown leading-snug">단체 차량은<br/>사전 확인 권장</p>
+        </article>
+
+        <article class="card-hover bg-cream rounded-xl p-5 md:p-6 editorial-shadow reveal">
+          <span class="material-symbols-outlined text-wood mb-3">groups</span>
+          <p class="text-[11px] tracking-[0.18em] font-semibold text-wood uppercase mb-2">가족 모임</p>
+          <p class="text-sm md:text-base font-semibold text-brown leading-snug">거실·마당<br/>공용 공간 있음</p>
+        </article>
+
+        <article class="card-hover bg-cream rounded-xl p-5 md:p-6 editorial-shadow reveal">
+          <span class="material-symbols-outlined text-wood mb-3">group_add</span>
+          <p class="text-[11px] tracking-[0.18em] font-semibold text-wood uppercase mb-2">단체 숙박</p>
+          <p class="text-sm md:text-base font-semibold text-brown leading-snug">일정·인원<br/>사전 확인 권장</p>
+        </article>
+
+        <article class="card-hover bg-cream rounded-xl p-5 md:p-6 editorial-shadow reveal">
+          <span class="material-symbols-outlined text-wood mb-3">videocam</span>
+          <p class="text-[11px] tracking-[0.18em] font-semibold text-wood uppercase mb-2">촬영 문의</p>
+          <p class="text-sm md:text-base font-semibold text-brown leading-snug">활용 경험 있음<br/>조건 사전 확인</p>
+        </article>
+
+        <article class="card-hover bg-cream rounded-xl p-5 md:p-6 editorial-shadow reveal">
+          <span class="material-symbols-outlined text-wood mb-3">outdoor_grill</span>
+          <p class="text-[11px] tracking-[0.18em] font-semibold text-wood uppercase mb-2">바비큐</p>
+          <!-- TODO: 바비큐 이용 조건 / 추가비용 / 사전 신청 여부 입력 -->
+          <p class="text-sm md:text-base font-semibold text-brown leading-snug">사전 신청 권장<br/>조건 확인 필요</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================ -->
+  <!-- 04. 이런 분께 추천합니다                                       -->
+  <!-- ============================================================ -->
+  <section id="audience" class="py-24 md:py-32 px-6 md:px-12">
+    <div class="max-w-7xl mx-auto">
+      <div class="text-center mb-16 reveal">
+        <span class="label-eyebrow block mb-5">For You</span>
+        <h2 class="font-serif text-3xl md:text-5xl font-bold text-brown leading-tight mb-5">
+          이런 분께 채연이 맞습니다
+        </h2>
+        <p class="text-brownsoft max-w-2xl mx-auto leading-relaxed">
+          공간은 누구에게나 좋은 곳이 아니라, 어떤 일정에 맞는 곳입니다.<br class="hidden md:block"/>
+          채연이 잘 맞는 분의 상황을 먼저 정리했습니다.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+
+        <article class="card-hover bg-cream rounded-2xl p-7 md:p-8 border hairline reveal">
+          <span class="material-symbols-outlined text-moss text-3xl mb-4">park</span>
+          <h3 class="font-serif text-xl font-bold text-brown mb-3">헤이리마을 여행객</h3>
+          <p class="text-brownsoft leading-relaxed text-sm md:text-base">
+            헤이리마을·프로방스 마을을 둘러본 뒤 조용히 머물 곳을 찾는 분께.
+          </p>
+        </article>
+
+        <article class="card-hover bg-cream rounded-2xl p-7 md:p-8 border hairline reveal">
+          <span class="material-symbols-outlined text-moss text-3xl mb-4">family_restroom</span>
+          <h3 class="font-serif text-xl font-bold text-brown mb-3">가족 모임</h3>
+          <p class="text-brownsoft leading-relaxed text-sm md:text-base">
+            방 개수보다 함께 머무는 거실·마당이 먼저 중요한 가족·친척 모임에.
+          </p>
+        </article>
+
+        <article class="card-hover bg-cream rounded-2xl p-7 md:p-8 border hairline reveal">
+          <span class="material-symbols-outlined text-moss text-3xl mb-4">groups_2</span>
+          <h3 class="font-serif text-xl font-bold text-brown mb-3">단체 숙박</h3>
+          <p class="text-brownsoft leading-relaxed text-sm md:text-base">
+            소규모 단체가 바비큐와 공용 공간을 함께 쓰며 머무는 일정에.
+          </p>
+        </article>
+
+        <article class="card-hover bg-cream rounded-2xl p-7 md:p-8 border hairline reveal">
+          <span class="material-symbols-outlined text-moss text-3xl mb-4">videocam</span>
+          <h3 class="font-serif text-xl font-bold text-brown mb-3">촬영 장소 문의</h3>
+          <p class="text-brownsoft leading-relaxed text-sm md:text-base">
+            여러 촬영에 활용된 경험이 있는 별장형 공간을 찾고 계신 제작진께.
+          </p>
+        </article>
+
+        <article class="card-hover bg-cream rounded-2xl p-7 md:p-8 border hairline reveal">
+          <span class="material-symbols-outlined text-moss text-3xl mb-4">spa</span>
+          <h3 class="font-serif text-xl font-bold text-brown mb-3">조용한 파주 여행</h3>
+          <p class="text-brownsoft leading-relaxed text-sm md:text-base">
+            번잡한 도심 호텔 대신, 시간이 묻어 있는 정겨운 공간에서 쉬고 싶은 분께.
+          </p>
+        </article>
+
+        <article class="card-hover bg-cream rounded-2xl p-7 md:p-8 border hairline reveal">
+          <span class="material-symbols-outlined text-moss text-3xl mb-4">meeting_room</span>
+          <h3 class="font-serif text-xl font-bold text-brown mb-3">워크숍·소규모 모임</h3>
+          <p class="text-brownsoft leading-relaxed text-sm md:text-base">
+            팀 워크숍, 소규모 비즈니스 모임 공간을 별도 문의로 확인하시는 분께.
+          </p>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================ -->
+  <!-- 05. 공간 안내                                                  -->
+  <!-- ============================================================ -->
+  <section id="spaces" class="py-24 md:py-32 px-6 md:px-12 bg-beige/60">
+    <div class="max-w-7xl mx-auto">
+      <div class="flex flex-col md:flex-row md:items-end md:justify-between gap-6 mb-16 reveal">
+        <div class="max-w-xl">
+          <span class="label-eyebrow block mb-5">Spaces</span>
+          <h2 class="font-serif text-3xl md:text-5xl font-bold text-brown leading-tight mb-5">
+            공간 안내
+          </h2>
+          <p class="text-brownsoft leading-relaxed">
+            방을 보여드리기 전에, 함께 머무는 공간부터 안내합니다.<br/>
+            가족·단체·촬영 이용 시 가장 자주 확인하시는 공간 순서로 정리했습니다.
+          </p>
+        </div>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+        <article class="card-hover bg-cream rounded-2xl overflow-hidden editorial-shadow reveal">
+          <div class="aspect-[4/3] overflow-hidden bg-sand">
+            <!-- TODO: ./assets/space-living.jpg 거실 사진 교체 -->
+            <img src="./assets/space-living.jpg"
+                 alt="파주 채연펜션 거실 — 가족 모임과 단체가 함께 머무는 공용 공간"
+                 class="w-full h-full object-cover" />
+          </div>
+          <div class="p-6 md:p-7">
+            <span class="inline-block px-3 py-1 rounded-full bg-beige text-wood text-[10px] font-bold tracking-widest uppercase mb-3">Living</span>
+            <h3 class="font-serif text-xl font-bold text-brown mb-2">거실 · 공용 공간</h3>
+            <p class="text-brownsoft text-sm leading-relaxed">가족과 모임이 함께 머무는 정겨운 공용 공간.</p>
+          </div>
+        </article>
+
+        <article class="card-hover bg-cream rounded-2xl overflow-hidden editorial-shadow reveal">
+          <div class="aspect-[4/3] overflow-hidden bg-sand">
+            <!-- TODO: ./assets/space-room.jpg 객실 사진 교체 -->
+            <img src="./assets/space-room.jpg"
+                 alt="파주 채연펜션 객실 — 시간이 묻어 있는 별장형 펜션 객실"
+                 class="w-full h-full object-cover" />
+          </div>
+          <div class="p-6 md:p-7">
+            <span class="inline-block px-3 py-1 rounded-full bg-beige text-wood text-[10px] font-bold tracking-widest uppercase mb-3">Rooms</span>
+            <h3 class="font-serif text-xl font-bold text-brown mb-2">객실</h3>
+            <!-- TODO: 객실 수 / 객실명 / 기준·최대 인원 / 침대 구성 입력 -->
+            <p class="text-brownsoft text-sm leading-relaxed">객실 구성과 인원은 일정에 맞게 확인 가능합니다.</p>
+          </div>
+        </article>
+
+        <article class="card-hover bg-cream rounded-2xl overflow-hidden editorial-shadow reveal">
+          <div class="aspect-[4/3] overflow-hidden bg-sand">
+            <!-- TODO: ./assets/space-yard.jpg 마당 사진 교체 -->
+            <img src="./assets/space-yard.jpg"
+                 alt="파주 채연펜션 마당 — 헤이리마을 근처 별장형 펜션의 야외 공간"
+                 class="w-full h-full object-cover" />
+          </div>
+          <div class="p-6 md:p-7">
+            <span class="inline-block px-3 py-1 rounded-full bg-beige text-wood text-[10px] font-bold tracking-widest uppercase mb-3">Yard</span>
+            <h3 class="font-serif text-xl font-bold text-brown mb-2">마당</h3>
+            <p class="text-brownsoft text-sm leading-relaxed">계절감이 살아 있는 야외 공간, 모임과 사진에 어울립니다.</p>
+          </div>
+        </article>
+
+        <article class="card-hover bg-cream rounded-2xl overflow-hidden editorial-shadow reveal">
+          <div class="aspect-[4/3] overflow-hidden bg-sand">
+            <!-- TODO: ./assets/space-bbq.jpg 바비큐 공간 사진 교체 -->
+            <img src="./assets/space-bbq.jpg"
+                 alt="파주 채연펜션 바비큐 공간 — 가족 모임과 단체 숙박에 어울리는 야외 바비큐장"
+                 class="w-full h-full object-cover" />
+          </div>
+          <div class="p-6 md:p-7">
+            <span class="inline-block px-3 py-1 rounded-full bg-beige text-wood text-[10px] font-bold tracking-widest uppercase mb-3">BBQ</span>
+            <h3 class="font-serif text-xl font-bold text-brown mb-2">바비큐 공간</h3>
+            <!-- TODO: 바비큐 그릴 형태 / 추가비용 / 사전 신청 조건 입력 -->
+            <p class="text-brownsoft text-sm leading-relaxed">사전 신청 권장. 운영 조건은 예약 전 확인.</p>
+          </div>
+        </article>
+
+        <article class="card-hover bg-cream rounded-2xl overflow-hidden editorial-shadow reveal">
+          <div class="aspect-[4/3] overflow-hidden bg-sand">
+            <!-- TODO: ./assets/space-group.jpg 단체 이용 사진 교체 -->
+            <img src="./assets/space-group.jpg"
+                 alt="파주 채연펜션 단체 이용 공간 — 가족 모임과 워크숍에 활용 가능한 별장형 공간"
+                 class="w-full h-full object-cover" />
+          </div>
+          <div class="p-6 md:p-7">
+            <span class="inline-block px-3 py-1 rounded-full bg-beige text-wood text-[10px] font-bold tracking-widest uppercase mb-3">Group</span>
+            <h3 class="font-serif text-xl font-bold text-brown mb-2">단체 이용 공간</h3>
+            <p class="text-brownsoft text-sm leading-relaxed">가족·친척·소규모 단체 일정에 맞춰 공간 구성 확인 가능.</p>
+          </div>
+        </article>
+
+        <article class="card-hover bg-cream rounded-2xl overflow-hidden editorial-shadow reveal">
+          <div class="aspect-[4/3] overflow-hidden bg-sand">
+            <!-- TODO: ./assets/space-shoot.jpg 촬영 가능 공간 사진 교체 -->
+            <img src="./assets/space-shoot.jpg"
+                 alt="파주 채연펜션 촬영 가능 공간 — 여러 촬영에 활용된 경험이 있는 별장형 공간"
+                 class="w-full h-full object-cover" />
+          </div>
+          <div class="p-6 md:p-7">
+            <span class="inline-block px-3 py-1 rounded-full bg-beige text-wood text-[10px] font-bold tracking-widest uppercase mb-3">Filming</span>
+            <h3 class="font-serif text-xl font-bold text-brown mb-2">촬영 가능 공간</h3>
+            <p class="text-brownsoft text-sm leading-relaxed">여러 촬영에 활용된 경험. 일정·목적에 따라 사전 확인 필요.</p>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================ -->
+  <!-- 06. 촬영·워크숍·모임                                           -->
+  <!-- ============================================================ -->
+  <section id="shoot" class="py-24 md:py-32 px-6 md:px-12 bg-brown text-cream">
+    <div class="max-w-6xl mx-auto">
+      <div class="reveal mb-14">
+        <span class="label-eyebrow text-woodsoft block mb-5">Filming · Workshop · Gathering</span>
+        <h2 class="font-serif text-3xl md:text-5xl font-bold text-cream leading-tight mb-6">
+          촬영·워크숍·모임 안내
+        </h2>
+        <p class="text-cream/70 leading-[1.85] max-w-3xl">
+          채연펜션은 여러 촬영에 활용된 경험이 있는 별장형 공간입니다.<br/>
+          촬영·워크숍·단체 모임은 공간의 분위기뿐 아니라 일정·인원·장비·이용 시간에 따라 조건이 달라질 수 있어 사전 확인을 권장합니다.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-5 md:gap-6 mb-12">
+
+        <article class="bg-cream/[0.04] backdrop-blur-sm border border-cream/10 rounded-2xl p-7 md:p-8 reveal">
+          <span class="material-symbols-outlined text-woodsoft text-3xl mb-3">videocam</span>
+          <h3 class="font-serif text-xl font-bold text-cream mb-3">드라마 촬영 경험</h3>
+          <p class="text-cream/70 text-sm md:text-base leading-relaxed">
+            여러 작품의 촬영에 활용된 경험이 있는 공간입니다.
+            <!-- TODO: 공개 가능 작품명 / 노출 범위 확정 후 본문 보완 -->
+          </p>
+        </article>
+
+        <article class="bg-cream/[0.04] backdrop-blur-sm border border-cream/10 rounded-2xl p-7 md:p-8 reveal">
+          <span class="material-symbols-outlined text-woodsoft text-3xl mb-3">domain</span>
+          <h3 class="font-serif text-xl font-bold text-cream mb-3">공간 대관성</h3>
+          <p class="text-cream/70 text-sm md:text-base leading-relaxed">
+            거실·마당·외관·객실 등 여러 톤의 공간이 한 부지 안에 함께 있어 다양한 장면에 활용해 보실 수 있습니다.
+          </p>
+        </article>
+
+        <article class="bg-cream/[0.04] backdrop-blur-sm border border-cream/10 rounded-2xl p-7 md:p-8 reveal">
+          <span class="material-symbols-outlined text-woodsoft text-3xl mb-3">checklist</span>
+          <h3 class="font-serif text-xl font-bold text-cream mb-3">촬영 문의 시 확인 사항</h3>
+          <ul class="text-cream/70 text-sm md:text-base leading-relaxed space-y-1.5">
+            <li>· 촬영 날짜와 이용 시간</li>
+            <li>· 예상 인원과 장비 규모</li>
+            <li>· 촬영 목적과 사용 범위</li>
+            <li>· 숙박 동반 여부</li>
+          </ul>
+        </article>
+
+        <article class="bg-cream/[0.04] backdrop-blur-sm border border-cream/10 rounded-2xl p-7 md:p-8 reveal">
+          <span class="material-symbols-outlined text-woodsoft text-3xl mb-3">forum</span>
+          <h3 class="font-serif text-xl font-bold text-cream mb-3">워크숍·단체 모임</h3>
+          <p class="text-cream/70 text-sm md:text-base leading-relaxed">
+            소규모 워크숍, 가족·친척 모임, 비즈니스 모임 등은 인원·시간·숙박 여부에 따라 안내가 달라집니다. 사전 문의로 가능 여부를 먼저 확인해 주세요.
+          </p>
+        </article>
+
+      </div>
+
+      <div class="flex flex-col sm:flex-row gap-3 justify-start">
+        <!-- TODO: 전화번호 확정 후 tel 링크 수정 -->
+        <a href="tel:00000000000" class="btn-primary px-8 py-4 rounded-full font-semibold text-sm tracking-widest inline-flex items-center justify-center gap-2">
+          <span class="material-symbols-outlined text-base">call</span>
+          촬영·단체 전화 문의
+        </a>
+        <a href="#reservation" class="btn-ghost text-cream border-cream/30 hover:bg-cream/10 px-8 py-4 rounded-full font-semibold text-sm tracking-widest inline-flex items-center justify-center">
+          가능 여부 먼저 확인하기
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================ -->
+  <!-- 07. 위치 안내                                                  -->
+  <!-- ============================================================ -->
+  <section id="location" class="py-24 md:py-32 px-6 md:px-12">
+    <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-start">
+
+      <div class="reveal">
+        <span class="label-eyebrow block mb-5">Location</span>
+        <h2 class="font-serif text-3xl md:text-5xl font-bold text-brown leading-tight mb-6">
+          헤이리마을 근처,<br/>
+          파주 여행 동선 위에 있습니다.
+        </h2>
+        <p class="text-brownsoft leading-[1.9] mb-10">
+          채연펜션은 헤이리예술마을과 프로방스 마을이 가까운 파주의 한적한 동네에 있습니다.<br/>
+          정확한 이동 시간은 교통 상황에 따라 달라질 수 있어, 지도에서 직접 확인해 주세요.
+        </p>
+
+        <div class="space-y-5 mb-10">
+          <div class="flex items-start gap-4">
+            <span class="material-symbols-outlined text-wood mt-0.5">location_on</span>
+            <div>
+              <p class="font-serif font-bold text-brown mb-1">주소</p>
+              <!-- TODO: 도로명·지번 주소, 우편번호 입력 -->
+              <p class="text-brownsoft text-sm leading-relaxed">경기 파주시 [도로명 주소 TODO]</p>
+            </div>
+          </div>
+
+          <div class="flex items-start gap-4">
+            <span class="material-symbols-outlined text-wood mt-0.5">explore</span>
+            <div>
+              <p class="font-serif font-bold text-brown mb-1">주변 여행 동선</p>
+              <p class="text-brownsoft text-sm leading-relaxed">헤이리예술마을, 프로방스 마을, 파주 출판도시 등</p>
+            </div>
+          </div>
+
+          <div class="flex items-start gap-4">
+            <span class="material-symbols-outlined text-wood mt-0.5">directions_car</span>
+            <div>
+              <p class="font-serif font-bold text-brown mb-1">접근 안내</p>
+              <!-- TODO: 자가용 / 대중교통 안내, 픽업 가능 여부 입력 -->
+              <p class="text-brownsoft text-sm leading-relaxed">자가용 이용을 권장하며, 자세한 동선은 지도에서 확인해 주세요.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex flex-col sm:flex-row gap-3">
+          <!-- TODO: 네이버지도 place URL 입력 -->
+          <a href="#" target="_blank" rel="noopener" class="btn-primary px-8 py-4 rounded-full font-semibold text-sm tracking-widest inline-flex items-center justify-center gap-2">
+            <span class="material-symbols-outlined text-base">map</span>
+            네이버지도에서 보기
+          </a>
+          <!-- TODO: 전화번호 확정 후 tel 링크 수정 -->
+          <a href="tel:00000000000" class="btn-ghost px-8 py-4 rounded-full font-semibold text-sm tracking-widest inline-flex items-center justify-center gap-2">
+            <span class="material-symbols-outlined text-base">call</span>
+            전화 문의
+          </a>
+        </div>
+      </div>
+
+      <div class="reveal">
+        <div class="bg-beige/60 border hairline rounded-2xl p-7 md:p-9 editorial-shadow">
+          <span class="label-eyebrow block mb-4">Visit Notes</span>
+          <h3 class="font-serif text-2xl font-bold text-brown mb-6">방문 전 확인할 것</h3>
+
+          <ul class="space-y-5 text-sm md:text-base">
+            <li class="flex items-start gap-3">
+              <span class="material-symbols-outlined text-moss text-lg mt-0.5">check_circle</span>
+              <span class="text-brownsoft leading-relaxed">자가용 이용을 권장하며, 단체 차량은 사전 확인이 좋습니다.</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <span class="material-symbols-outlined text-moss text-lg mt-0.5">check_circle</span>
+              <span class="text-brownsoft leading-relaxed">헤이리·프로방스 여행 전후로 머물기 좋은 동선입니다.</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <span class="material-symbols-outlined text-moss text-lg mt-0.5">check_circle</span>
+              <span class="text-brownsoft leading-relaxed">조용한 분위기의 별장형 공간이므로, 단체 이용 시 사전 안내를 부탁드립니다.</span>
+            </li>
+          </ul>
+
+          <div class="rule-soft my-7"></div>
+
+          <div class="grid grid-cols-2 gap-4 text-sm">
+            <div>
+              <p class="text-[10px] tracking-[0.22em] font-semibold text-wood uppercase mb-1.5">Check-in</p>
+              <!-- TODO: 체크인 시간 확정 후 수정 -->
+              <p class="font-serif font-bold text-brown">TODO</p>
+            </div>
+            <div>
+              <p class="text-[10px] tracking-[0.22em] font-semibold text-wood uppercase mb-1.5">Check-out</p>
+              <!-- TODO: 체크아웃 시간 확정 후 수정 -->
+              <p class="font-serif font-bold text-brown">TODO</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ============================================================ -->
+  <!-- 08. 예약 안내                                                  -->
+  <!-- ============================================================ -->
+  <section id="reservation" class="py-24 md:py-32 px-6 md:px-12 bg-beige/60">
+    <div class="max-w-5xl mx-auto">
+      <div class="text-center mb-14 reveal">
+        <span class="label-eyebrow block mb-5">Reservation</span>
+        <h2 class="font-serif text-3xl md:text-5xl font-bold text-brown leading-tight mb-5">
+          예약 안내
+        </h2>
+        <p class="text-brownsoft leading-relaxed max-w-2xl mx-auto">
+          이용 목적에 따라 안내가 달라질 수 있어, 먼저 가능 여부를 확인하는 것을 권장합니다.<br/>
+          가족 모임, 단체 숙박, 촬영·워크숍은 전화 문의가 더 빠릅니다.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-5 mb-10">
+
+        <article class="bg-cream rounded-2xl p-7 editorial-shadow reveal">
+          <span class="material-symbols-outlined text-brick text-3xl mb-4">event_available</span>
+          <h3 class="font-serif text-xl font-bold text-brown mb-2">일반 숙박 예약</h3>
+          <p class="text-brownsoft text-sm leading-relaxed mb-5">날짜와 인원이 정해지셨다면 예약 플랫폼에서 확인하실 수 있습니다.</p>
+          <!-- TODO: 야놀자 / NOL / 네이버예약 링크 입력 -->
+          <a href="#" target="_blank" rel="noopener" class="btn-wood w-full px-5 py-3 rounded-full text-sm font-semibold tracking-wider text-center inline-block">
+            예약 플랫폼으로 이동
+          </a>
+        </article>
+
+        <article class="bg-cream rounded-2xl p-7 editorial-shadow reveal">
+          <span class="material-symbols-outlined text-brick text-3xl mb-4">groups</span>
+          <h3 class="font-serif text-xl font-bold text-brown mb-2">가족 모임·단체 숙박</h3>
+          <p class="text-brownsoft text-sm leading-relaxed mb-5">인원과 일정에 따라 안내가 달라질 수 있어 전화 문의를 권장합니다.</p>
+          <!-- TODO: 전화번호 확정 후 tel 링크 수정 -->
+          <a href="tel:00000000000" class="btn-primary w-full px-5 py-3 rounded-full text-sm font-semibold tracking-wider inline-flex items-center justify-center gap-2">
+            <span class="material-symbols-outlined text-base">call</span>
+            전화 문의
+          </a>
+        </article>
+
+        <article class="bg-cream rounded-2xl p-7 editorial-shadow reveal">
+          <span class="material-symbols-outlined text-brick text-3xl mb-4">videocam</span>
+          <h3 class="font-serif text-xl font-bold text-brown mb-2">촬영·워크숍 문의</h3>
+          <p class="text-brownsoft text-sm leading-relaxed mb-5">일정·인원·장비·이용 시간에 따라 조건이 달라집니다. 사전 확인 필요.</p>
+          <!-- TODO: 전화번호 확정 후 tel 링크 수정 -->
+          <a href="tel:00000000000" class="btn-primary w-full px-5 py-3 rounded-full text-sm font-semibold tracking-wider inline-flex items-center justify-center gap-2">
+            <span class="material-symbols-outlined text-base">call</span>
+            촬영·단체 문의
+          </a>
+        </article>
+
+      </div>
+
+      <div class="bg-cream/70 border hairline rounded-2xl p-6 md:p-8 reveal">
+        <div class="flex items-start gap-4">
+          <span class="material-symbols-outlined text-wood mt-0.5">info</span>
+          <div>
+            <p class="font-serif font-bold text-brown mb-2">예약 전 확인 권장 항목</p>
+            <p class="text-brownsoft text-sm md:text-base leading-relaxed">
+              날짜 / 인원 / 차량 수 / 바비큐 이용 여부 / 단체·촬영·워크숍 여부.<br/>
+              미리 알려주시면 가능 여부와 조건을 더 빠르게 확인해 드립니다.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================ -->
+  <!-- 09. FAQ                                                       -->
+  <!-- ============================================================ -->
+  <section id="faq" class="py-24 md:py-32 px-6 md:px-12">
+    <div class="max-w-3xl mx-auto">
+      <div class="text-center mb-14 reveal">
+        <span class="label-eyebrow block mb-5">FAQ</span>
+        <h2 class="font-serif text-3xl md:text-5xl font-bold text-brown leading-tight">
+          자주 묻는 질문
+        </h2>
+      </div>
+
+      <div class="divide-y hairline border-t border-b hairline">
+
+        <details class="group py-6 reveal">
+          <summary class="flex justify-between items-start gap-4">
+            <span class="font-serif text-base md:text-lg font-bold text-brown leading-snug">채연펜션은 헤이리마을과 얼마나 가까운가요?</span>
+            <span class="material-symbols-outlined text-wood faq-icon transition-transform">add</span>
+          </summary>
+          <p class="mt-4 text-brownsoft leading-[1.85] text-sm md:text-base">
+            채연펜션은 파주 헤이리마을 근처에 위치한 별장형 펜션입니다. 헤이리예술마을, 프로방스 마을 등 파주 여행 동선에서 머물기 좋은 위치이며, 정확한 이동 시간은 교통 상황에 따라 달라질 수 있어 지도에서 함께 확인해 주세요.
+          </p>
+        </details>
+
+        <details class="group py-6 reveal">
+          <summary class="flex justify-between items-start gap-4">
+            <span class="font-serif text-base md:text-lg font-bold text-brown leading-snug">가족 모임이나 단체 숙박이 가능한가요?</span>
+            <span class="material-symbols-outlined text-wood faq-icon transition-transform">add</span>
+          </summary>
+          <p class="mt-4 text-brownsoft leading-[1.85] text-sm md:text-base">
+            가족 모임과 단체 숙박을 함께 고려할 수 있는 별장형 공간입니다. 인원과 날짜, 바비큐 이용 여부, 차량 수에 따라 안내가 달라질 수 있어 예약 전 전화 문의를 권장합니다.
+          </p>
+        </details>
+
+        <details class="group py-6 reveal">
+          <summary class="flex justify-between items-start gap-4">
+            <span class="font-serif text-base md:text-lg font-bold text-brown leading-snug">드라마 촬영지로 쓰인 적이 있나요?</span>
+            <span class="material-symbols-outlined text-wood faq-icon transition-transform">add</span>
+          </summary>
+          <p class="mt-4 text-brownsoft leading-[1.85] text-sm md:text-base">
+            채연펜션은 여러 촬영에 활용된 경험이 있는 공간입니다.
+            <!-- TODO: 공개 가능 작품명이 확정되면 이 답변에 자연스럽게 추가 -->
+            구체적인 촬영 가능 여부는 일정·목적·인원·장비 규모에 따라 달라질 수 있어 사전 확인이 필요합니다.
+          </p>
+        </details>
+
+        <details class="group py-6 reveal">
+          <summary class="flex justify-between items-start gap-4">
+            <span class="font-serif text-base md:text-lg font-bold text-brown leading-snug">촬영 장소로 빌리고 싶습니다. 어떤 정보를 알려드려야 하나요?</span>
+            <span class="material-symbols-outlined text-wood faq-icon transition-transform">add</span>
+          </summary>
+          <p class="mt-4 text-brownsoft leading-[1.85] text-sm md:text-base">
+            촬영 날짜와 이용 시간, 예상 인원과 장비 규모, 촬영 목적과 사용 범위, 숙박 동반 여부를 알려주시면 공간 이용 가능 여부를 먼저 확인해 드립니다.
+          </p>
+        </details>
+
+        <details class="group py-6 reveal">
+          <summary class="flex justify-between items-start gap-4">
+            <span class="font-serif text-base md:text-lg font-bold text-brown leading-snug">바비큐 이용은 어떻게 되나요?</span>
+            <span class="material-symbols-outlined text-wood faq-icon transition-transform">add</span>
+          </summary>
+          <p class="mt-4 text-brownsoft leading-[1.85] text-sm md:text-base">
+            <!-- TODO: 바비큐 운영 방식 / 추가비용 / 사전 신청 조건 확정 후 본문 다듬기 -->
+            바비큐는 사전 신청을 권장합니다. 운영 조건과 비용은 일정에 따라 달라질 수 있어 예약 전 전화로 확인 부탁드립니다.
+          </p>
+        </details>
+
+        <details class="group py-6 reveal">
+          <summary class="flex justify-between items-start gap-4">
+            <span class="font-serif text-base md:text-lg font-bold text-brown leading-snug">주차는 가능한가요?</span>
+            <span class="material-symbols-outlined text-wood faq-icon transition-transform">add</span>
+          </summary>
+          <p class="mt-4 text-brownsoft leading-[1.85] text-sm md:text-base">
+            <!-- TODO: 주차 대수 / 단체 차량 수용 가능 여부 입력 -->
+            주차는 가능합니다. 단체 차량은 인원과 차량 수에 따라 사전 확인이 필요할 수 있어 예약 전 알려주시는 것을 권장합니다.
+          </p>
+        </details>
+
+        <details class="group py-6 reveal">
+          <summary class="flex justify-between items-start gap-4">
+            <span class="font-serif text-base md:text-lg font-bold text-brown leading-snug">반려동물 동반이 가능한가요?</span>
+            <span class="material-symbols-outlined text-wood faq-icon transition-transform">add</span>
+          </summary>
+          <p class="mt-4 text-brownsoft leading-[1.85] text-sm md:text-base">
+            <!-- TODO: 반려동물 동반 가능 여부 / 조건 / 추가비용 입력 -->
+            반려동물 동반 가능 여부와 조건은 확정 후 안내드립니다. 예약 전 미리 문의해 주세요.
+          </p>
+        </details>
+
+        <details class="group py-6 reveal">
+          <summary class="flex justify-between items-start gap-4">
+            <span class="font-serif text-base md:text-lg font-bold text-brown leading-snug">체크인·체크아웃 시간은 어떻게 되나요?</span>
+            <span class="material-symbols-outlined text-wood faq-icon transition-transform">add</span>
+          </summary>
+          <p class="mt-4 text-brownsoft leading-[1.85] text-sm md:text-base">
+            <!-- TODO: 체크인 / 체크아웃 시간 확정 후 본문 수정 -->
+            체크인·체크아웃 시간은 확정 후 안내드립니다. 얼리 체크인이나 레이트 체크아웃이 필요하신 경우 예약 전 알려주세요.
+          </p>
+        </details>
+
+        <details class="group py-6 reveal">
+          <summary class="flex justify-between items-start gap-4">
+            <span class="font-serif text-base md:text-lg font-bold text-brown leading-snug">예약은 어디서 하나요?</span>
+            <span class="material-symbols-outlined text-wood faq-icon transition-transform">add</span>
+          </summary>
+          <p class="mt-4 text-brownsoft leading-[1.85] text-sm md:text-base">
+            일반 숙박은 예약 플랫폼에서, 가족 모임·단체 숙박·촬영·워크숍은 전화 문의가 더 빠릅니다. 일정과 인원이 정해졌다면 먼저 가능 여부를 확인하는 것을 권장합니다.
+          </p>
+        </details>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================ -->
+  <!-- 10. FINAL CTA                                                 -->
+  <!-- ============================================================ -->
+  <section id="final-cta" class="pb-24 md:pb-32 px-6 md:px-12">
+    <div class="max-w-5xl mx-auto bg-brown rounded-3xl p-10 md:p-16 text-center overflow-hidden relative reveal">
+      <div class="absolute -top-24 -right-24 w-72 h-72 bg-brick/20 rounded-full blur-3xl"></div>
+      <div class="absolute -bottom-24 -left-24 w-72 h-72 bg-moss/15 rounded-full blur-3xl"></div>
+
+      <div class="relative z-10">
+        <span class="label-eyebrow text-woodsoft block mb-5">Next Step</span>
+        <h2 class="font-serif text-3xl md:text-5xl font-bold text-cream leading-[1.15] mb-6">
+          날짜와 이용 목적이 정해졌다면<br/>
+          먼저 가능 여부를 확인하세요.
+        </h2>
+        <p class="text-cream/70 leading-relaxed max-w-2xl mx-auto mb-10">
+          가족 모임·단체 숙박·촬영·워크숍은 일정과 조건에 따라 안내가 달라집니다.<br/>
+          전화 한 통이면 더 빠르게 확인하실 수 있습니다.
+        </p>
+
+        <div class="flex flex-col sm:flex-row gap-3 justify-center">
+          <!-- TODO: 전화번호 확정 후 tel 링크 수정 -->
+          <a href="tel:00000000000" class="btn-primary px-9 py-4 rounded-full font-semibold text-sm tracking-widest inline-flex items-center justify-center gap-2">
+            <span class="material-symbols-outlined text-base">call</span>
+            전화 문의
+          </a>
+          <!-- TODO: 예약 플랫폼 링크 입력 -->
+          <a href="#" target="_blank" rel="noopener" class="btn-ghost text-cream border-cream/30 hover:bg-cream/10 px-9 py-4 rounded-full font-semibold text-sm tracking-widest inline-flex items-center justify-center">
+            예약 플랫폼으로 이동
+          </a>
+          <!-- TODO: 네이버지도 place URL 입력 -->
+          <a href="#" target="_blank" rel="noopener" class="btn-ghost text-cream border-cream/30 hover:bg-cream/10 px-9 py-4 rounded-full font-semibold text-sm tracking-widest inline-flex items-center justify-center">
+            지도에서 보기
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ============================================================== -->
+<!-- 11. FOOTER                                                      -->
+<!-- ============================================================== -->
+<footer class="bg-ink text-cream/85 px-6 md:px-12 py-14">
+  <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-10">
+
+    <div>
+      <p class="font-serif text-xl font-bold text-cream tracking-[0.18em] mb-4">채연펜션 CHAEYEON</p>
+      <p class="text-cream/65 text-sm leading-relaxed">
+        파주 헤이리마을 근처,<br/>
+        시간이 묻어 있는 정겨운 별장형 펜션.
+      </p>
+    </div>
+
+    <div class="text-sm space-y-2 text-cream/70 leading-relaxed">
+      <!-- TODO: 상호명 / 대표자명 / 사업자등록번호 / 통신판매업 신고번호 입력 -->
+      <p>상호명: 채연펜션</p>
+      <p>대표자: TODO</p>
+      <p>사업자등록번호: TODO</p>
+      <p>주소: TODO</p>
+      <p>전화: TODO</p>
+      <p>이메일: TODO</p>
+    </div>
+
+    <div class="text-sm space-y-3">
+      <p class="text-cream/85 font-semibold mb-2">바로가기</p>
+      <div class="flex flex-col gap-2 text-cream/70">
+        <!-- TODO: 예약 플랫폼 링크 입력 -->
+        <a href="#" target="_blank" rel="noopener" class="hover:text-cream transition">예약 플랫폼</a>
+        <!-- TODO: 네이버지도 place URL 입력 -->
+        <a href="#" target="_blank" rel="noopener" class="hover:text-cream transition">네이버지도</a>
+        <!-- TODO: 인스타그램 / 블로그 URL 입력 (운영 시) -->
+        <a href="#" target="_blank" rel="noopener" class="hover:text-cream transition">인스타그램</a>
+        <a href="#" target="_blank" rel="noopener" class="hover:text-cream transition">블로그</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="max-w-7xl mx-auto mt-12 pt-6 border-t border-cream/10 text-xs text-cream/45">
+    © <span id="year">2026</span> 채연펜션. All rights reserved.
+  </div>
+</footer>
+
+<!-- ============================================================== -->
+<!-- Scripts — reveal IntersectionObserver                           -->
+<!-- ============================================================== -->
+<script>
+  (function(){
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    var targets = document.querySelectorAll('.reveal');
+    if (!targets.length) return;
+
+    var reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    if (reduced || !('IntersectionObserver' in window)){
+      targets.forEach(function(el){ el.classList.add('is-in'); });
+      return;
+    }
+
+    var io = new IntersectionObserver(function(entries, obs){
+      entries.forEach(function(entry){
+        if (!entry.isIntersecting) return;
+        entry.target.classList.add('is-in');
+        obs.unobserve(entry.target);
+      });
+    }, { threshold: 0.08, rootMargin: '0px 0px -6% 0px' });
+
+    targets.forEach(function(el){ io.observe(el); });
+  })();
+</script>
+
+</body>
+</html>
